@@ -1,0 +1,22 @@
+数据结构（应用）-集合
+
+Scala集合基本介绍
+    1、Scala同时支持不可变集合和可变集合，不可变集合可以安全是并发访问
+    2、两个主要的包：
+        1）、不可变集合（集合本身不能动态变化）：scala.collection.immutable
+        2）、可变集合（集合本身可以动态变化）：scala.collection.mutable
+    3、Scala默认采用不可变集合，对于几乎所有的集合类，Scala都同时提供
+       可变（mutable）和不可变（immutable）的版本
+    4、Scala的集合有三大类：序列seq、集Set、映射Map，所有的集合都扩展
+       自iterable特质，在Scala中集合有可变（mutable）和不可变（immutable）
+       两种类型
+Scala不可变集合继承关系
+    1、Set、Map是Java中也有的集合
+    2、Seq是Java中没有的，发现List归属到Seq，因此这里的List就和Java不是同一个概念
+    3、前面讲解的for循环中有一个1 to 3，就是IndexSeq下的Vector
+    4、String也是属于IndexSeq
+    5、发现经典的数据结构比如Queue和Stack被归属到LinearSeq
+    6、注意Scala中的Map体系有一个SortedMap，说明Scala的Map可以支持排序
+    7、IndexSeq和LinearSeq的区别：
+         IndexSeq是通过索引来查找和定位，因此速度快，比如String就是一个索引集合，通过索引即可定位
+         linearSeq是线型的，即有头尾的概念，这种数据结构一般是通过遍历来查找
