@@ -1,0 +1,22 @@
+类型约束----上界(Upper Bounds)/下界(Lower Bounds)
+
+上界(Upper Bounds)介绍
+    Java中的上界
+        在Java泛型里面表示某个类型是A类型的子类，使用extends关键字，这种形式叫upper bounds
+        语法：<T extends A> 或通配符：<? extends A>
+    Scala中上界
+        在Scala里表示某个类型是A类型的子类型，也称上界或上限，使用<:关键字
+        语法：[T <: A] 或 通配符：[_ <: A]
+下界(Lower Bounds)介绍
+    Java中下界
+        在java泛型里表示某个类型是A类型的父类型，使用super关键字
+        语法：<T super A> 或通配符：<? super A>
+    Scala中下界
+        在Scala中的下界或下限，使用 >:关键字
+        语法：[T >: A] 或通配符：[_ >: A]
+    使用小结
+        1、对于下界，可以传入任意类型
+        2、传入和A类型直系的，是A类型父类的还是父类处理，是A类型子类的按照A类型处理
+        3、和A类型无关的，一律按照Object处理
+        4、也就是下界可以随意传入，只是处理的方式不一样
+        5、不能使用上界的思路来类推下界的含义
