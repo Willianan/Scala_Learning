@@ -1,0 +1,6 @@
+maven项目打包
+    1、步骤1：先给SparkMaster打包
+       修改pom.xml文件<mainClass>xxx</mainClass>,指定程序的主类
+    2、步骤2：双击Maven Project下Lifecycle中的package
+    3、将打包的.jar上传到Linux，实现分布式部署
+    4、运行测试
