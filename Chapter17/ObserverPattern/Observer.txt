@@ -1,0 +1,13 @@
+观察者模式（Observer）
+对象之间多对一的依赖关系的一种设计方案，被依赖的对象为Subject，依赖的对象为Observer，
+Subject通知Observer变化。用户Observer是多的一方
+    Subject:登记注册、移除和通知
+        1、registerObserver：注册
+        2、removeObserver： 移除
+        3、notifyObserver：通知所有的注册用户，根据不同需求。
+    Observer：接收输入
+        update()
+观察者模式的优势：
+    1、观察者模式设计后，会以集合的方式来管理用户（Observer），包括注册、移除和通知
+    2、当增加观察者用户时，不需要去修改核心类。可以作为一个独立的进程保持运行，无需
+       重新加载。
