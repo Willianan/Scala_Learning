@@ -1,0 +1,8 @@
+协变、逆变和不变
+基本介绍
+    1、Scala的协变(covariant)(+)、逆变(contravariant)(-)、不可变(invariant)
+    2、对于一个带类型参数的类型：
+       如果A及其子类型B，满足List[B]也符合List[A]的子类型，那么就称为convariance(协变)
+       如果List[A]是List[B]的子类型，即与原来的父子关系正相反，则称为contravariance(逆变)
+       如果一个类型支持协变或逆变，则称variance，否则称invariance
+    3、在Java中，泛型类型都是invariant，而Scala可以在定义类型声明(用加号表示协变，减号表示逆变)
